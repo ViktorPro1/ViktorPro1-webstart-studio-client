@@ -1,0 +1,44 @@
+@media (max-width: 768px) {
+    .open-source-title {
+        font-size: 2rem;
+    }
+
+    .open-source-hero {
+        padding: 40px 16px;
+    }
+
+    .open-source-contribute-box {
+        padding: 24px 16px;
+    }
+
+    .open-source-section {
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 420px) {
+    .open-source-title {
+        font-size: 1.5rem;
+    }
+
+    .open-source-hero {
+        padding: 24px 12px;
+    }
+
+    .open-source-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .open-source-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .open-source-contribute-box {
+        padding: 16px 12px;
+    }
+
+    .open-source-github-btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}

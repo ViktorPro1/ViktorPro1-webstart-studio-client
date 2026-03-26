@@ -1,0 +1,113 @@
+// src/pages/PolandTax/PolandTax.jsx
+import React from "react";
+import "./PolandTax.css";
+import "./PolandTax.mobile.css";
+
+const PolandTax = () => {
+  return (
+    <div className="PolandTax-container">
+      <h1 className="PolandTax-h1">Повернення податку з Польщі</h1>
+
+      <h2 className="PolandTax-h2">Що таке PIT-11?</h2>
+      <p>
+        <strong>PIT-11</strong> — це офіційна податкова довідка, яку
+        зобов'язаний надати ваш роботодавець у Польщі після завершення року або
+        після звільнення. У ній зазначаються:
+      </p>
+      <ul className="PolandTax-ul">
+        <li>Загальна сума доходів за рік;</li>
+        <li>Сума сплаченого податку;</li>
+        <li>Внески на соціальне страхування (ZUS).</li>
+      </ul>
+      <p>
+        Цей документ необхідний для подання річної декларації{" "}
+        <strong>PIT-37</strong>, щоб отримати повернення частини сплачених
+        податків.
+      </p>
+
+      <h3>📌 Де взяти PIT-11?</h3>
+      <p>
+        Його надсилає роботодавець до <strong>28 лютого</strong>. Якщо ви його{" "}
+        <strong>не отримали</strong> — ми можемо згенерувати для вас{" "}
+        <strong>лист-запит</strong> до роботодавця. PIT-11 також доступний у
+        електронному кабінеті на порталі{" "}
+        <a href="https://www.podatki.gov.pl/" target="_blank" rel="noreferrer">
+          e-Urząd Skarbowy
+        </a>
+        .
+      </p>
+
+      <h2 className="PolandTax-h2">Що таке IFT-1R?</h2>
+      <p>
+        <strong>IFT-1R</strong> — довідка для{" "}
+        <strong>нерезидентів Польщі</strong>. Містить:
+      </p>
+      <ul className="PolandTax-ul">
+        <li>Інформацію про доходи в Польщі;</li>
+        <li>Суми податків, утриманих у джерела;</li>
+        <li>Дані про роботодавця.</li>
+      </ul>
+      <div className="PolandTax-highlight">
+        ⚠️{" "}
+        <strong>
+          IFT-1R не дає змоги подати PIT-37 для повернення податку.
+        </strong>{" "}
+        Ми допомагаємо підготувати лист до роботодавця з проханням видати
+        PIT-11.
+      </div>
+
+      <h2 className="PolandTax-h2">
+        Необхідні документи для повернення податку:
+      </h2>
+      <ul className="PolandTax-ul">
+        <li>PIT-11 від усіх роботодавців;</li>
+        <li>PESEL — польський ідентифікаційний номер;</li>
+        <li>
+          Номер банківського рахунку (можна українського банку, IBAN та SWIFT);
+        </li>
+        <li>PIT-37 — якщо подавали раніше;</li>
+        <li>Електронна пошта та номер телефону;</li>
+        <li>
+          Інформація про дітей до 21 року (ПІ та дата народження латиницею).
+        </li>
+      </ul>
+
+      <div className="PolandTax-priceBox">
+        <h2 className="PolandTax-h2">💼 Вартість послуг:</h2>
+        <ul className="PolandTax-ul">
+          <li>
+            Оформлення PIT-11 — <strong>250 грн</strong>
+          </li>
+          <li>
+            Подання коректи декларації — <strong>250 грн</strong>
+          </li>
+        </ul>
+        <p>
+          ⏳ <strong>Очікування повернення коштів:</strong> від{" "}
+          <strong>1 до 3 місяців</strong> після подання декларації.
+        </p>
+      </div>
+
+      <p>
+        <strong>Для розрахунку або консультації</strong> — напишіть нам у
+        Telegram:
+      </p>
+      <a
+        href="https://t.me/Viktor_freelancer_recruiting_pit"
+        className="PolandTax-button PolandTax-telegramButton"
+      >
+        Написати в Telegram
+      </a>
+      <a
+        href="https://everything-related-to-pit.netlify.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="PolandTax-button PolandTax-courseButton"
+      >
+        Все що стосується PIT-11
+      </a>
+    </div>
+  );
+};
+
+export default PolandTax;

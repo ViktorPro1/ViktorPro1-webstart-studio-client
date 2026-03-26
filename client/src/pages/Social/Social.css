@@ -1,0 +1,210 @@
+.socials {
+    min-height: 100vh;
+    color: #e2e8f0;
+    padding: 4rem 2rem;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.socials h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fdfdfd;
+    text-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+    font-weight: 800;
+}
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.social-list li {
+    flex: 1;
+    min-width: 200px;
+    box-sizing: border-box;
+}
+
+.social-list a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    padding: 1.25rem 2rem;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.telegram {
+    background: linear-gradient(135deg, #0088cc 0%, #006699 100%);
+}
+
+.telegram:hover {
+    background: linear-gradient(135deg, #006699 0%, #0088cc 100%);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 136, 204, 0.5);
+    border-color: rgba(56, 189, 248, 0.5);
+}
+
+.viber {
+    background: linear-gradient(135deg, #7360f2 0%, #5e49da 100%);
+}
+
+.viber:hover {
+    background: linear-gradient(135deg, #5e49da 0%, #7360f2 100%);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(115, 96, 242, 0.5);
+    border-color: rgba(115, 96, 242, 0.5);
+}
+
+.facebook {
+    background: linear-gradient(135deg, #3b5998 0%, #2d4373 100%);
+}
+
+.facebook:hover {
+    background: linear-gradient(135deg, #2d4373 0%, #3b5998 100%);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(59, 89, 152, 0.5);
+    border-color: rgba(59, 89, 152, 0.5);
+}
+
+.whatsapp {
+    background: linear-gradient(135deg, #25d366 0%, #1ebe5d 100%);
+}
+
+.whatsapp:hover {
+    background: linear-gradient(135deg, #1ebe5d 0%, #25d366 100%);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+    border-color: rgba(37, 211, 102, 0.5);
+}
+
+.social-subscribe {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 0 auto 3rem;
+    max-width: 800px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.social-subscribe li {
+    flex: 1;
+    min-width: 250px;
+    box-sizing: border-box;
+}
+
+.social-subscribe a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1.25rem 2rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.instagram-subscribe {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.instagram-subscribe:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(240, 148, 51, 0.5);
+}
+
+.tiktok-subscribe {
+    background: linear-gradient(135deg, #000000 0%, #2d2d2d 100%);
+}
+
+.tiktok-subscribe:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+}
+
+.share-platform {
+    background: rgba(30, 41, 59, 0.8);
+    padding: 2.5rem 2rem;
+    margin: 0 auto;
+    max-width: 900px;
+    border: 2px solid rgba(56, 189, 248, 0.3);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.share-platform h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #60a5fa;
+}
+
+.share-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.share-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1.5rem 1rem;
+    background: rgba(15, 23, 42, 0.9);
+    border: 2px solid rgba(56, 189, 248, 0.3);
+    border-radius: 15px;
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    min-height: 110px;
+    box-sizing: border-box;
+}
+
+.share-btn:hover {
+    background: rgba(56, 189, 248, 0.15);
+    border-color: rgba(56, 189, 248, 0.6);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.4);
+    color: #38bdf8;
+}

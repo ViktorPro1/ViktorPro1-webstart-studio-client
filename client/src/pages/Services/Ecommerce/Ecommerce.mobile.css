@@ -1,0 +1,147 @@
+@media (max-width: 768px) {
+    .ecommerce-page {
+        padding: 30px 3px;
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    .ecommerce-container {
+        padding: 30px 8px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .ecommerce-container h2,
+    .ecommerce-container h3,
+    .ecommerce-container p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .ecommerce-icon-large {
+        width: 80px;
+        height: 80px;
+        flex-shrink: 0;
+    }
+
+    .ecommerce-container h2 {
+        font-size: 1.75rem;
+    }
+
+    .ecommerce-container h3 {
+        font-size: 1.35rem;
+        margin: 25px 0 15px;
+    }
+
+    .ecommerce-intro {
+        font-size: 1.05rem;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .ecommerce-feature-card {
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .ecommerce-summary {
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .ecommerce-page {
+        padding: 20px 3px;
+        min-height: calc(100vh - 60px);
+    }
+
+    .ecommerce-container {
+        padding: 20px 5px;
+        border-radius: 8px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .ecommerce-icon-large {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 15px;
+        flex-shrink: 0;
+    }
+
+    .ecommerce-header {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .ecommerce-container h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .ecommerce-container h3 {
+        font-size: 1.2rem;
+        margin: 20px 0 15px;
+    }
+
+    .ecommerce-intro {
+        font-size: 1rem;
+        margin-bottom: 12px;
+        padding: 0;
+    }
+
+    .ecommerce-description {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin: 15px 0;
+        padding: 0;
+    }
+
+    .ecommerce-feature-card {
+        padding: 18px;
+    }
+
+    .ecommerce-feature-card svg {
+        margin-bottom: 10px;
+    }
+
+    .ecommerce-benefits ul {
+        padding-left: 15px;
+        line-height: 1.8;
+    }
+
+    .ecommerce-benefits li {
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+    }
+
+    .ecommerce-summary {
+        padding: 18px;
+        margin-top: 20px;
+        border-left-width: 3px;
+    }
+
+    .ecommerce-summary p {
+        font-size: 0.95rem;
+    }
+}

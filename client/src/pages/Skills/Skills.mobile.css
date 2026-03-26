@@ -1,0 +1,143 @@
+@media (max-width: 768px) {
+    .skills-page {
+        padding: 3rem 1.5rem;
+    }
+
+    .skills-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .skill-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .skill-icon {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .skill-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .skill-time {
+        font-size: 0.95rem;
+    }
+
+    .skills-hover-description {
+        bottom: 2rem;
+        padding: 1.25rem 2rem;
+        max-width: 90%;
+        font-size: 1rem;
+    }
+
+    .skills-philosophy {
+        padding: 2rem 1rem;
+    }
+
+    .skills-philosophy p {
+        font-size: 1.2rem;
+    }
+
+    .skill-modal {
+        padding: 2.5rem 2rem;
+        max-width: 90%;
+    }
+
+    .modal-icon {
+        font-size: 4rem;
+    }
+
+    .skill-modal h2 {
+        font-size: 2rem;
+    }
+
+    .skill-modal p {
+        font-size: 1.1rem;
+    }
+
+    .modal-time {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-page {
+        padding: 2rem 1rem;
+    }
+
+    .skills-hero h1 {
+        font-size: 2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .skill-card {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .skill-icon {
+        font-size: 3rem;
+    }
+
+    .skill-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .skill-time {
+        font-size: 0.9rem;
+    }
+
+    .skills-hover-description {
+        bottom: 1.5rem;
+        padding: 1rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .skills-philosophy {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .skills-philosophy p {
+        font-size: 1.1rem;
+    }
+
+    .skill-modal {
+        padding: 2rem 1.5rem;
+    }
+
+    .modal-close {
+        font-size: 2rem;
+        width: 35px;
+        height: 35px;
+    }
+
+    .modal-icon {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .skill-modal h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .skill-modal p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .modal-time {
+        font-size: 0.95rem;
+        padding: 0.875rem;
+    }
+}

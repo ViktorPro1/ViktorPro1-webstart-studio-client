@@ -1,0 +1,147 @@
+@media (max-width: 768px) {
+    .personalized-landing-page {
+        padding: 30px 3px;
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    .personalized-landing-container {
+        padding: 30px 8px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .personalized-landing-container h2,
+    .personalized-landing-container h3,
+    .personalized-landing-container p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .personalized-landing-icon-large {
+        width: 80px;
+        height: 80px;
+        flex-shrink: 0;
+    }
+
+    .personalized-landing-container h2 {
+        font-size: 1.75rem;
+    }
+
+    .personalized-landing-container h3 {
+        font-size: 1.35rem;
+        margin: 25px 0 15px;
+    }
+
+    .personalized-landing-intro {
+        font-size: 1.05rem;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .landing-feature-card {
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .personalized-landing-summary {
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .personalized-landing-page {
+        padding: 20px 3px;
+        min-height: calc(100vh - 60px);
+    }
+
+    .personalized-landing-container {
+        padding: 20px 5px;
+        border-radius: 8px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .personalized-landing-icon-large {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 15px;
+        flex-shrink: 0;
+    }
+
+    .personalized-landing-header {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .personalized-landing-container h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .personalized-landing-container h3 {
+        font-size: 1.2rem;
+        margin: 20px 0 15px;
+    }
+
+    .personalized-landing-intro {
+        font-size: 1rem;
+        margin-bottom: 12px;
+        padding: 0;
+    }
+
+    .personalized-landing-description {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin: 15px 0;
+        padding: 0;
+    }
+
+    .landing-feature-card {
+        padding: 18px;
+    }
+
+    .landing-feature-card svg {
+        margin-bottom: 10px;
+    }
+
+    .personalized-landing-benefits ul {
+        padding-left: 15px;
+        line-height: 1.8;
+    }
+
+    .personalized-landing-benefits li {
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+    }
+
+    .personalized-landing-summary {
+        padding: 18px;
+        margin-top: 20px;
+        border-left-width: 3px;
+    }
+
+    .personalized-landing-summary p {
+        font-size: 0.95rem;
+    }
+}

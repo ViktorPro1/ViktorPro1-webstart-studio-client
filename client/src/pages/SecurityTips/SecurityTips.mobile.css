@@ -1,0 +1,108 @@
+@media (max-width: 768px) {
+    .security-tips-hero {
+        padding: 40px 0;
+    }
+
+    .security-tips-hero h1 {
+        font-size: 30px;
+    }
+
+    .security-tips-subtitle {
+        font-size: 16px;
+    }
+
+    .security-tips-container {
+        padding: 0 15px;
+    }
+
+    .security-tips-warning-section,
+    .security-tips-examples-section,
+    .security-tips-signs-section,
+    .security-tips-protection-section,
+    .security-tips-faq-section,
+    .security-tips-resources-section {
+        padding: 40px 0;
+    }
+
+    .security-tips-warning-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .security-tips-example-grid,
+    .security-tips-signs-grid,
+    .security-tips-resources-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .security-tips-example-card,
+    .security-tips-sign-card {
+        padding: 15px;
+    }
+
+    .security-tips-sign-number {
+        font-size: 24px;
+    }
+
+    .security-tips-protection-item {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .security-tips-check-icon {
+        align-self: center;
+    }
+
+    .security-tips-service-card {
+        padding: 20px;
+    }
+
+    .security-tips-price {
+        font-size: 24px;
+    }
+
+    .security-tips-contact-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .security-tips-btn {
+        justify-content: center;
+    }
+
+    .security-tips-faq-question {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .security-tips-professional-help {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    /* === ФІКС СКРОЛУ === */
+    .security-tips-warning-card,
+    .security-tips-example-card,
+    .security-tips-sign-card,
+    .security-tips-service-card,
+    .security-tips-faq-question {
+        touch-action: pan-y;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .security-tips-warning-section::before,
+    .security-tips-warning-section::after,
+    .security-tips-examples-section::before,
+    .security-tips-examples-section::after,
+    .security-tips-signs-section::before,
+    .security-tips-signs-section::after,
+    .security-tips-protection-section::before,
+    .security-tips-protection-section::after,
+    .security-tips-faq-section::before,
+    .security-tips-faq-section::after {
+        pointer-events: none;
+    }
+}
