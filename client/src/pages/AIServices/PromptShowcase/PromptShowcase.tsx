@@ -1,0 +1,263 @@
+import React, { useState } from 'react';
+import './PromptShowcase.css';
+import './PromptShowcase.mobile.css';
+
+interface GalleryItem {
+    id: number;
+    image: string;
+    title: string;
+    description: string;
+    prompt: string;
+}
+
+const PromptShowcase: React.FC = () => {
+    const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null);
+
+    const gallery: GalleryItem[] = [
+        {
+            id: 1,
+            image: '/images/gallery/img1.webp',
+            title: 'Професійний AI бізнес-асистент',
+            description: 'Промпт для створення корпоративного AI-представника',
+            prompt: 'Professional humanoid AI robot in business suit holding tablet, modern office interior, soft natural lighting, white and beige tones, photorealistic, 8k quality, corporate atmosphere, clean minimalist background with QR code element'
+        },
+        {
+            id: 2,
+            image: '/images/gallery/img2.webp',
+            title: 'Футуристичний AI розробник',
+            description: 'Концепт для AI tech startup',
+            prompt: 'Futuristic AI robot with glowing blue eyes and chest plate marked "AI", holding holographic code symbols "</>" and "Web Start Studio" text, dark cyberpunk atmosphere, blue neon lighting, cinematic 3D render, technology theme'
+        },
+        {
+            id: 3,
+            image: '/images/gallery/img3.webp',
+            title: 'AI маркетинг-менеджер',
+            description: 'Для промоції digital сервісів',
+            prompt: 'Sleek humanoid AI in business attire with orange accents and headphones, holding smartphone, dark gradient background purple to navy, modern tech aesthetic, professional lighting, text overlay "Web Start Studio" with services description in Ukrainian'
+        },
+        {
+            id: 4,
+            image: '/images/gallery/img4.webp',
+            title: 'Брендинг для ресторану',
+            description: 'Креативна концепція для Lord Bryce BBQ',
+            prompt: 'Young man looking at modern restaurant poster design, clean minimalist aesthetic, "Lord Bryce" branding with chef hat icon, Ukrainian text "Барбекю. Гриль. Стиль. Смак", professional food photography of grilled meat, beige and red color scheme, realistic lighting'
+        },
+        {
+            id: 5,
+            image: '/images/gallery/img5.webp',
+            title: '3D дизайн для digital агентства',
+            description: 'Промпт для рекламного креативу',
+            prompt: '3D rendered cards floating on dark background, "WebStart Studio" text, vibrant orange and gray color palette, digital advertising theme with "AD" label, isometric perspective, modern minimal design, professional studio lighting'
+        },
+        {
+            id: 6,
+            image: '/images/gallery/img6.webp',
+            title: 'Командна робота над проєктом',
+            description: 'Ілюстрація для портфоліо студії',
+            prompt: 'Diverse team of three people in modern office, animated 3D style, purple background, presenting portfolio on screen, laptop and tablet devices, warm professional atmosphere, colorful clothing (blue, orange), plants and modern furniture, "WebStart Studio" branding'
+        },
+        {
+            id: 7,
+            image: '/images/gallery/img7.webp',
+            title: 'Мотиваційна історія успіху',
+            description: 'Для соціальних мереж та блогу',
+            prompt: 'Happy young man raising fist in celebration at laptop with "Web Start Studio" sticker, comic/cartoon illustration style, teal/turquoise background and shirt, wooden table, Ukrainian text "КОЛИ ТИ НАРЕШТІ ЗАПУСКАЄШ СВІЙ САЙТ", warm encouraging mood'
+        },
+        {
+            id: 8,
+            image: '/images/gallery/img8.webp',
+            title: '3D робоче місце розробника',
+            description: 'Концепт для IT компанії',
+            prompt: '3D rendered workspace scene, purple aesthetic, computer monitor showing website layout, "WebStart Studio" branding, geometric icons (code, typography, charts), keyboard and mouse, coffee cup, plant, globe, soft studio lighting, isometric view, pastel colors'
+        },
+        {
+            id: 9,
+            image: '/images/gallery/img9.webp',
+            title: 'Портфоліо веб-студії',
+            description: 'Showcase наших послуг',
+            prompt: '3D clay render style, cute character at orange desk with blue laptop, "WEBSTART STUDIO" text on brown wall, four service cards: RESUME, PORTFOLIO, LANDING, TEMPLATE with icons, small bookshelf, plant in pot, pencil holder, warm cozy atmosphere, soft lighting'
+        },
+        {
+            id: 10,
+            image: '/images/gallery/img10.webp',
+            title: 'Професійний AI співробітник',
+            description: 'Для корпоративного контенту',
+            prompt: 'Humanoid robot in business attire, gray sweater with "Web Start Studio" logo, working on laptop in modern office, photorealistic, professional lighting, glass walls background, neutral corporate interior, technology meets business concept'
+        },
+        {
+            id: 11,
+            image: '/images/gallery/img11.webp',
+            title: 'Абстрактна AI креативність',
+            description: 'Для творчих проєктів',
+            prompt: 'Abstract liquid metallic sculpture, iridescent pink and cyan chrome effect, "Web Start Studio" logo floating in center with code brackets "</>" and cursor icon, dark background, glossy reflective surface, dynamic fluid shapes, 3D render, futuristic digital art'
+        },
+        {
+            id: 12,
+            image: '/images/gallery/img12.webp',
+            title: 'Кіберпанк digital світ',
+            description: 'Футуристична візуалізація даних',
+            prompt: 'Cyberpunk cityscape from above, neon purple and cyan lights, holographic UI elements floating in space, "Web Start Studio" logo with glowing cursor, digital data streams, futuristic interface panels, high-tech atmosphere, cinematic lighting, 3D render'
+        },
+        {
+            id: 13,
+            image: '/images/gallery/img13.webp',
+            title: 'Портал в digital всесвіт',
+            description: 'Концепт для tech бренду',
+            prompt: 'Glowing portal/tunnel effect, purple and cyan neon lights, holographic interface elements, "Web Start Studio" logo in center with cursor and code symbols, digital particles, futuristic technology theme, circular composition, vibrant colors, 3D render'
+        },
+        {
+            id: 14,
+            image: '/images/gallery/img14.webp',
+            title: 'Космічний старт проєкту',
+            description: 'Метафора запуску бізнесу',
+            prompt: 'Space rocket flying through starry nebula, "Web Start Studio" logo overlay with cursor icon, cosmic background with blue and orange nebula clouds, constellation lines, shooting stars, inspirational startup metaphor, cinematic space scene'
+        },
+        {
+            id: 15,
+            image: '/images/gallery/img15.webp',
+            title: 'Космічний кіт-мрійник',
+            description: 'Креатив для вірусного контенту',
+            prompt: 'Adorable orange tabby cat floating in space reaching toward Earth, starry cosmic background, "Web Start Studio" logo, dreamy atmosphere, vibrant colors, painted art style, whimsical and inspiring mood, nebula clouds, galaxy scenery'
+        },
+        {
+            id: 16,
+            image: '/images/gallery/img16.webp',
+            title: 'Історія успіху в коміксах',
+            description: 'Storytelling для клієнтів',
+            prompt: 'Four-panel comic strip illustration, cartoon style, showing project launch story: 1) team planning at desk, 2) rocket with "WEBSTART STUDIO" logo, 3) team celebrating around rocket, 4) computer screen showing "PROJECT LAUNCHED" with checkmark, orange and blue color scheme'
+        },
+        {
+            id: 17,
+            image: '/images/gallery/img17.webp',
+            title: 'Створення лендингів',
+            description: 'Промо послуг веб-розробки',
+            prompt: 'Flat illustration, blue gradient background, young man in orange sweater waving, website mockup with image placeholder, "WebStart Studio" logo with paper plane icon, checkmark bubble, email icon, text "CREATING LANDING PAGES FOR SALES, GREETINGS, AND MORE", friendly professional design'
+        },
+        {
+            id: 18,
+            image: '/images/gallery/img18.webp',
+            title: 'Робоче місце програміста',
+            description: 'Реалістичний офісний контент',
+            prompt: 'Person coding at desk from behind, dark code editor on monitor, framed certificates on wall (HTML, JavaScript, Python, Canva), warm ambient lighting, wooden desk, minimalist workspace, Amazon Echo speaker, realistic photography style, professional developer environment'
+        },
+        {
+            id: 19,
+            image: '/images/gallery/img19.webp',
+            title: 'AI промпт-майстер',
+            description: 'Для AI промптинг сервісу',
+            prompt: 'Elegant female humanoid AI robot holding glowing holographic tablet showing brain and data icons, "Web Start Studio" logo, Ukrainian text "Пишемо індивідуальні промпти для ваших потреб", dark dramatic lighting, photorealistic 3D render, futuristic technology aesthetic'
+        },
+        {
+            id: 20,
+            image: '/images/gallery/img20.webp',
+            title: 'Комплексні веб-рішення',
+            description: 'Інфографіка наших послуг',
+            prompt: '3D rendered infographic, light blue background, computer monitor in center, floating service cards around it: ПОРТФОЛІО, РЕЗЮМЕ, БАНЕРИ with yellow icons, ТАРГЕТОВАНА РЕКЛАМА with Facebook/Instagram logos, "WEBSTART STUDIO СТВОРЕННЯ ВЕБ-САЙТІВ" text, clean modern design, Ukrainian language'
+        },
+        {
+            id: 21,
+            image: '/images/gallery/img21.webp',
+            title: 'Маркетингова екосистема',
+            description: 'Комплексне digital-рішення для бізнесу',
+            prompt: 'Laptop on wooden desk showing portfolio website "Hi, I\'m Alex Doe - Landing Page Design", gradient pink to blue background, floating 3D social media icons (Facebook, Instagram), promotional cards "BIG SALE 50% OFF", "Boost Your Business", "New Collection", vibrant colors, modern marketing concept, photorealistic 3D render'
+        },
+        {
+            id: 22,
+            image: '/images/gallery/img22.webp',
+            title: 'Святкові привітання для близьких',
+            description: 'Персональна landing page для родини',
+            prompt: '3D rendered scene, computer monitor displaying greeting card "WebStart Studio - Привітання для близьких", elderly couple photo, Ukrainian poem text, orange gradient background, "Завантажити" button, festive decorations: colorful bunting flags, balloons (yellow, blue, orange, purple), gift box with ribbon, tulip flowers in pot, warm celebratory atmosphere'
+        },
+        {
+            id: 23,
+            image: '/images/gallery/img23.webp',
+            title: 'Онлайн бізнес-запуск',
+            description: '3D концепт для стартапів',
+            prompt: '3D clay render illustration, cute character in orange holding large blue cursor, purple background, website interface mockup with "ONLINE" button, rocket ship icon, chat bubble, gear/settings icon, growth chart bars in yellow-orange gradient, "WebStart Studio" text, friendly startup concept, soft pastel colors'
+        }
+    ];
+
+    return (
+        <div className="prompt-showcase">
+            <div className="prompt-showcase__hero">
+                <h1 className="prompt-showcase__title">Наші Роботи</h1>
+                <p className="prompt-showcase__subtitle">
+                    Приклади зображень, створених за допомогою наших персональних промптів
+                </p>
+                <div className="prompt-showcase__info-box">
+                    <p>
+                        💡 Кожне зображення створене за унікальним промптом, написаним спеціально під наші потреби.
+                        <br />
+                        Хочете такий же результат? <a href="/prompt-studio">Спробуйте самі</a>
+                    </p>
+                </div>
+            </div>
+
+            <div className="prompt-showcase__grid">
+                {gallery.map(item => (
+                    <div
+                        key={item.id}
+                        className="prompt-showcase__card"
+                        onClick={() => setSelectedImage(item)}
+                    >
+                        <img
+                            src={item.image}
+                            alt={item.title}
+                            className="prompt-showcase__img"
+                            loading="lazy"
+                        />
+                        <div className="prompt-showcase__card-overlay">
+                            <h3 className="prompt-showcase__card-title">{item.title}</h3>
+                            <p className="prompt-showcase__card-desc">{item.description}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            <div className="prompt-showcase__cta">
+                <h2>Отримайте свій унікальний промпт</h2>
+                <p>Розкажіть нам що вам потрібно, і ми напишемо для вас ідеальний промпт</p>
+                <a href="/prompt-editor" className="prompt-showcase__button">
+                    Спробувати зараз
+                </a>
+            </div>
+
+            {selectedImage && (
+                <div
+                    className="prompt-showcase__modal"
+                    onClick={() => setSelectedImage(null)}
+                >
+                    <div
+                        className="prompt-showcase__modal-box"
+                        onClick={(e: React.MouseEvent) => e.stopPropagation()}
+                    >
+                        <button
+                            className="prompt-showcase__close"
+                            onClick={() => setSelectedImage(null)}
+                        >
+                            ×
+                        </button>
+
+                        <img
+                            src={selectedImage.image}
+                            alt={selectedImage.title}
+                            className="prompt-showcase__modal-img"
+                        />
+
+                        <div className="prompt-showcase__modal-content">
+                            <h2>{selectedImage.title}</h2>
+                            <p className="prompt-showcase__modal-desc">{selectedImage.description}</p>
+
+                            <div className="prompt-showcase__prompt-block">
+                                <strong>Використаний промпт:</strong>
+                                <p>{selectedImage.prompt}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+        </div>
+    );
+};
+
+export default PromptShowcase;

@@ -1,0 +1,116 @@
+@media (max-width: 768px) {
+    .about-page {
+        max-width: 100%;
+        padding: 20px 15px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .about-section,
+    .about-history-section,
+    .about-team-section {
+        padding: 24px 15px;
+        /* однаковий відступ скрізь */
+        margin: 0 0 24px 0;
+        /* однаковий відступ між секціями */
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-team-container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-team-member {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 20px;
+        /* відступ між картками команди */
+        box-sizing: border-box;
+    }
+
+    .about-centered {
+        font-size: 0.95rem;
+        word-wrap: break-word;
+    }
+
+    .about-team-member p {
+        font-size: 0.9rem;
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .about-section,
+    .about-history-section,
+    .about-team-section {
+        padding: 20px 12px;
+        /* пропорційно менше ніж 768px */
+        margin: 0 0 20px 0;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-centered:first-child {
+        font-size: 1.5rem;
+    }
+
+    .about-team-member {
+        padding: 12px;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 16px;
+        box-sizing: border-box;
+    }
+
+    .about-team-member img {
+        height: 140px;
+    }
+
+    .about-team-member h3 {
+        font-size: 1.1rem;
+    }
+
+    .about-team-member p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .about-page {
+        max-width: 100%;
+        padding: 12px 8px;
+        overflow-x: hidden;
+    }
+
+    .about-section,
+    .about-history-section,
+    .about-team-section {
+        padding: 16px 10px;
+        /* пропорційно менше ніж 480px */
+        margin: 0 0 16px 0;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-team-member {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto 12px;
+        box-sizing: border-box;
+    }
+
+    .about-team-member img {
+        height: 130px;
+    }
+
+    .about-team-member h3 {
+        font-size: 1rem;
+    }
+
+    .about-team-member p {
+        font-size: 0.8rem;
+    }
+}

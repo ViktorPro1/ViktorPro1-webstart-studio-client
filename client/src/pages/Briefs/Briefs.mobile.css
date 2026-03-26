@@ -1,0 +1,121 @@
+/* =========================
+   Планшети (до 1024px)
+   ========================= */
+@media (max-width: 1024px) {
+    .briefs-title {
+        font-size: 2rem;
+    }
+
+    .briefs-description {
+        font-size: 1.05rem;
+        margin-bottom: 30px;
+    }
+
+    .brief-card {
+        padding: 30px 20px;
+    }
+}
+
+/* =========================
+   Смартфони (до 768px)
+   ========================= */
+@media (max-width: 768px) {
+    .briefs {
+        padding: 40px 15px;
+    }
+
+    .briefs-title {
+        font-size: 1.6rem;
+    }
+
+    .briefs-description {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .briefs-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .brief-card {
+        padding: 20px 15px;
+    }
+
+    .brief-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+
+    /* ✅ КНОПКИ ЗАВАНТАЖИТИ - ВУЗЬКІ */
+    .brief-btn {
+        width: 85%;
+        /* ← Не 100%, а 85% ширини */
+        max-width: 280px;
+        /* ← Максимальна ширина */
+        margin: 0 auto;
+        /* ← По центру */
+        justify-content: center;
+        font-size: 0.85rem;
+        padding: 8px 14px;
+        line-height: 1.4;
+    }
+}
+
+/* =========================
+   Маленькі смартфони (до 480px)
+   ========================= */
+@media (max-width: 480px) {
+    .briefs {
+        padding: 25px 10px;
+    }
+
+    .briefs-title {
+        font-size: 1.4rem;
+    }
+
+    .briefs-description {
+        font-size: 0.9rem;
+    }
+
+    .brief-card {
+        padding: 15px 10px;
+        border-radius: 12px;
+    }
+
+    .brief-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* ✅ КНОПКИ ЗАВАНТАЖИТИ - ЩЕ ВУЗЬКІШІ */
+    .brief-btn {
+        width: 80%;
+        /* ← 80% ширини картки */
+        max-width: 240px;
+        /* ← Ще менша макс. ширина */
+        margin: 0 auto;
+        justify-content: center;
+        font-size: 0.8rem;
+        padding: 7px 12px;
+        line-height: 1.35;
+    }
+
+    .contact-section {
+        padding: 20px 10px;
+    }
+
+    .contact-section h3 {
+        font-size: 1.4rem;
+    }
+
+    .contact-section p {
+        font-size: 0.9rem;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+    .prompt-studio {
+        overflow-x: hidden;
+        /* прибирає горизонтальний скрол */
+    }
+
+    .prompt-studio-container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+    }
+
+    .prompt-studio-features,
+    .prompt-studio-info,
+    .examples-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .prompt-cta-button {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .prompt-studio-container {
+        max-width: 100%;
+        padding: 1.5rem 0.75rem;
+        overflow-x: hidden;
+    }
+
+    .prompt-studio-title {
+        font-size: 1.75rem;
+    }
+
+    .prompt-studio-description {
+        font-size: 0.95rem;
+    }
+
+    .prompt-cta-button {
+        width: 100%;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+        box-sizing: border-box;
+    }
+
+    .examples-grid {
+        gap: 0.75rem;
+    }
+}

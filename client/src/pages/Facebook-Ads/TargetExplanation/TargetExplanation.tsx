@@ -1,0 +1,106 @@
+import React from 'react';
+import './TargetExplanation.css';
+import './TargetExplanation.mobile.css';
+
+const TargetExplanation = () => {
+    const benefits = [
+        { icon: '⏱️', title: 'Економить час', text: 'Швидкий запуск кампаній без зайвих затримок' },
+        { icon: '🤝', title: 'Підвищує довіру', text: 'Професійна подача інформації збільшує довіру клієнтів' },
+        { icon: '📈', title: 'Збільшує звернення', text: 'Більше контактів = більше потенційних клієнтів' },
+        { icon: '📞', title: 'Прямий зв\'язок', text: 'Всі необхідні контакти для зв\'язку з вами' }
+    ];
+
+    const landingFeatures = [
+        'Опис вакансій або маршрутів',
+        'Ціни та умови',
+        'Фотографії',
+        'Контакти',
+        'Кнопки для швидкого зв\'язку через месенджери (Viber, Telegram, WhatsApp)'
+    ];
+
+    return (
+        <div className="target-explanation">
+            <div className="target-explanation-container">
+                <section className="target-explanation-hero">
+                    <h1 className="target-explanation-title">
+                        Як ми рекламуємо ваші вакансії та перевезення
+                    </h1>
+                </section>
+
+                <section className="target-explanation-content">
+                    <div className="target-explanation-block">
+                        <h2 className="target-explanation-heading">Наш підхід до реклами</h2>
+                        <p className="target-explanation-text">
+                            При розміщенні <strong>нашими сторінками</strong> ваших вакансій або маршрутів
+                            пасажирських перевезень ми запускаємо рекламну кампанію з ціллю «трафік» і спрямовуємо її
+                            безпосередньо на виклики. Як показала практика, найкраще спрацьовують саме{' '}
+                            <strong>дзвінки на ваш номер телефону</strong> — так потенційні клієнти одразу виходять на
+                            прямий контакт із вами.
+                        </p>
+                        <p className="target-explanation-text">
+                            Звісно, можна спрямовувати рекламу й на месенджери, однак у такому випадку більшість
+                            повідомлень надходитиме нам. А коли ціль налаштована на виклик — люди телефонують{' '}
+                            <strong>безпосередньо вам</strong>, що значно прискорює процес комунікації. Проте не завжди
+                            дзвінки з-за кордону на український номер є зручними або доступними для потенційного клієнта.
+                        </p>
+                    </div>
+
+                    <div className="target-explanation-block">
+                        <h2 className="target-explanation-heading">Індивідуальний лендінг</h2>
+                        <p className="target-explanation-text">
+                            Саме тому ми пропонуємо створення <strong>індивідуального лендінгу</strong>
+                            – односторінкового сайту з усією важливою інформацією:
+                        </p>
+                        <ul className="target-explanation-list">
+                            {landingFeatures.map((feature, index) => (
+                                <li key={index}>{feature}</li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <div className="target-explanation-block">
+                        <h2 className="target-explanation-heading">Як це працює</h2>
+                        <p className="target-explanation-text">
+                            Маючи готовий лендінг, ми запускаємо рекламу з посиланням саме на нього.
+                            Це значно підвищує ефективність, адже люди можуть ознайомитись з пропозицією,
+                            переглянути деталі й одразу написати вам у зручний спосіб, навіть перебуваючи за кордоном.
+                        </p>
+                        <p className="target-explanation-text">
+                            <strong>Після завершення рекламної кампанії лендінг залишається у вашому
+                                розпорядженні, і ви можете надсилати його посилання всім зацікавленим у вашій роботі
+                                або перевезеннях.</strong> Це зручно, практично й дозволяє не втрачати потенційних клієнтів.
+                        </p>
+                    </div>
+
+                    <div className="target-explanation-benefits">
+                        <h2 className="target-explanation-heading">Такий підхід:</h2>
+                        <div className="target-explanation-benefits-grid">
+                            {benefits.map((benefit, index) => (
+                                <div key={index} className="target-explanation-benefit-card">
+                                    <div className="target-explanation-benefit-icon">{benefit.icon}</div>
+                                    <h3 className="target-explanation-benefit-title">{benefit.title}</h3>
+                                    <p className="target-explanation-benefit-text">{benefit.text}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="target-explanation-note">
+                        <div className="target-explanation-note-icon">💡</div>
+                        <div className="target-explanation-note-content">
+                            <h3 className="target-explanation-note-title">Примітка:</h3>
+                            <p className="target-explanation-note-text">
+                                Ми розуміємо, що створення лендінгу – це додаткова послуга, яка потребує часу та
+                                ресурсів. Але водночас це інструмент, який реально працює та дає результат.
+                                Ми нічого не нав'язуємо — лише пропонуємо зручне і перевірене рішення для тих,
+                                хто хоче отримувати більше звернень та виглядати професійно в очах потенційних клієнтів.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    );
+};
+
+export default TargetExplanation;
