@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="theme-color" content="#667eea" />
+  <meta name="description"
+    content="WebStart Studio — створення лендінгів, портфоліо та резюме. Оптимізовані рішення для ідей та особистих брендів." />
+  <link rel="apple-touch-icon" href="/logo192.png" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <title>WebStart Studio — Digital Solutions для ідей та брендів</title>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://web-start-studio.netlify.app/" />
+  <meta property="og:title" content="WebStart Studio — Digital Solutions для ідей та брендів" />
+  <meta property="og:description"
+    content="WebStart Studio — створення лендінгів, портфоліо та резюме. Оптимізовані рішення для ідей та особистих брендів." />
+  <meta property="og:image" content="https://web-start-studio.netlify.app/og-image-home.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://web-start-studio.netlify.app/" />
+  <meta name="twitter:title" content="WebStart Studio — Digital Solutions для ідей та брендів" />
+  <meta name="twitter:description"
+    content="WebStart Studio — створення лендінгів, портфоліо та резюме. Оптимізовані рішення для ідей та особистих брендів." />
+  <meta name="twitter:image" content="https://web-start-studio.netlify.app/og-image-home.jpg" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1570037057391515');
+    fbq('track', 'PageView');
+  </script>
+
+</head>
+
+
+<body>
+  <noscript>✨ WebStart Studio потребує JavaScript для роботи. Увімкніть його та продовжуйте.</noscript>
+  <div id="root"></div>
+  <script type="module" src="/src/index.tsx"></script>
+</body>
+
+</html>
